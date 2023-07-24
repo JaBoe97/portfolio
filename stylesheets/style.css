@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font: "Mynerve", cursive;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  background-color: rgb(189, 244, 238);
+}
+
+.introduction-profil-picture-container {
+  display: grid;
+  margin: 80px 50px 0 50px;
+}
+
+.introduction-container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+}
+.introduction-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.contact-links {
+  grid-column: 1;
+  grid-row: 2;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.profile-picture-container {
+  position: relative;
+  width: fit-content;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  margin-right: 30px;
+}
+.profile-picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sr-only {
+  display: none;
+}

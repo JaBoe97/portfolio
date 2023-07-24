@@ -1,13 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <h1 class="sr-only">Jana's Portfolio</h1>
+    <section class="introduction-profil-picture-container">
+      <h2 class="sr-only">Introduction</h2>
+      <div class="introduction-container">
+        <img src="images/zitat.png" width="500px" height="auto" alt="" />
+        <div class="introduction-text">
+          Hi! <br />
+          Ich bin Jana, <br />
+          Web Developer.
+        </div>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/JaBoe97">Mein Github-Profil</a> <br />
+        <a href="#contact">Meine Kontaktdaten</a>
+      </div>
+
+      <div class="profile-picture-container">
+        <img src="images/rahmen.png" width="400px" height="auto" alt="" />
+        <img
+          src="images/Profilbild.jpg"
+          width="300px"
+          height="auto"
+          alt="Profilbild"
+          class="profile-picture"
+        />
+      </div>
+    </section>
+    <section id="project">
+      <h2>Meine Projekte</h2>
+      <p>Hier sehen Sie eine Auswahl meiner bisherigen Projekte</p>
+    </section>
+    <section id="cv">Lebenslauf</section>
+    <section>
+      <article id="skills">Fähigkeiten</article>
+      <article id="interest">Interessen</article>
+    </section>
   </body>
+
+  <footer>
+    <section id="contact">Kontakt</section>
+  </footer>
 </html>
