@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
 
   <body>
     <h1 class="sr-only">Jana's Portfolio</h1>
-    <section class="introduction-profil-picture-container">
-      <h2 class="sr-only">Introduction</h2>
+    <section
+      aria-labelledby="introduction"
+      class="introduction-profil-picture-section"
+    >
+      <h2 id="introduction" class="sr-only">Introduction</h2>
       <div class="introduction-container">
-        <img src="images/zitat.png" width="500px" height="auto" alt="" />
+        <img
+          src="images/transparents/zitat.png"
+          width="500px"
+          height="auto"
+          alt=""
+        />
         <div class="introduction-text">
           Hi! <br />
           Ich bin Jana, <br />
@@ -25,7 +34,12 @@
       </div>
 
       <div class="profile-picture-container">
-        <img src="images/rahmen.png" width="400px" height="auto" alt="" />
+        <img
+          src="images/transparents/rahmen.png"
+          width="400px"
+          height="auto"
+          alt=""
+        />
         <img
           src="images/Profilbild.jpg"
           width="300px"
@@ -35,18 +49,68 @@
         />
       </div>
     </section>
-    <section id="project">
-      <h2>Meine Projekte</h2>
+    <section aria-labelledby="projects" class="projects-section">
+      <h2 id="projects">Meine Projekte</h2>
       <p>Hier sehen Sie eine Auswahl meiner bisherigen Projekte</p>
+      <div class="projects-container">
+        <article class="project-container">
+          <h3>Notifications Page</h3>
+          <img
+            src="images/screenshots/Notifications page thumbnail.png"
+            width="600px"
+            height="auto"
+            alt="Motifications page Thumbnail"
+          />
+        </article>
+        <article class="project-container">
+          <h3>Result Summary Component</h3>
+          <img
+            src="images/screenshots/Results summary component thumbnail.png"
+            width="600px"
+            height="auto"
+            alt="Result Summary Component Thumbnail"
+          />
+        </article>
+        <article class="project-container">
+          <h3>Four Cart Section</h3>
+          <img
+            src="images/screenshots/Four card feature section thumbnail.png"
+            width="600px"
+            height="auto"
+            alt="Four Cart Section Thumbnail"
+          />
+        </article>
+        <article class="project-container">
+          <h3>E-commerce Page</h3>
+          <img
+            src="images/screenshots/E-commerce product page thumbnail.png"
+            width="600px"
+            height="auto"
+            alt="E-commerce Page Thumbnail"
+          />
+        </article>
+      </div>
     </section>
-    <section id="cv">Lebenslauf</section>
+    <section>Lebenslauf</section>
     <section>
-      <article id="skills">Fähigkeiten</article>
-      <article id="interest">Interessen</article>
+      <article>Fähigkeiten</article>
+      <article>Interessen</article>
     </section>
   </body>
 
   <footer>
-    <section id="contact">Kontakt</section>
+    <section>
+      <a href="https://github.com/JaBoe97">
+        <img
+          src="images/transparents/github.png"
+          width="30px"
+          height="auto"
+          alt="github link"
+        />Github</a
+      >
+      <a href="https://www.frontendmentor.io/profile/JaBoe97">
+        Frontend Mentor</a
+      >
+    </section>
   </footer>
 </html>
