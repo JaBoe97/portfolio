@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheets/normalize.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <script type="text/javascript" src="main.js"></script>
   </head>
 
   <body>
@@ -49,43 +50,39 @@
         />
       </div>
     </section>
+
     <section aria-labelledby="projects" class="projects-section">
       <h2 id="projects">Meine Projekte</h2>
       <p>Hier sehen Sie eine Auswahl meiner bisherigen Projekte</p>
       <div class="projects-container">
-        <article class="project-container">
+        <article class="project-container" onclick="openLiveSiteNotification()">
           <h3>Notifications Page</h3>
           <img
             src="images/screenshots/Notifications page thumbnail.png"
-            width="600px"
-            height="auto"
             alt="Motifications page Thumbnail"
           />
         </article>
-        <article class="project-container">
+        <article
+          class="project-container"
+          onclick="openLiveSiteResultSummary()"
+        >
           <h3>Result Summary Component</h3>
           <img
             src="images/screenshots/Results summary component thumbnail.png"
-            width="600px"
-            height="auto"
             alt="Result Summary Component Thumbnail"
           />
         </article>
-        <article class="project-container">
-          <h3>Four Cart Section</h3>
+        <article class="project-container" onclick="openLiveSiteFourCard()">
+          <h3>Four Card Section</h3>
           <img
             src="images/screenshots/Four card feature section thumbnail.png"
-            width="600px"
-            height="auto"
-            alt="Four Cart Section Thumbnail"
+            alt="Four Card Section Thumbnail"
           />
         </article>
-        <article class="project-container">
+        <article class="project-container" onclick="openLiveSiteECommerce()">
           <h3>E-commerce Page</h3>
           <img
             src="images/screenshots/E-commerce product page thumbnail.png"
-            width="600px"
-            height="auto"
             alt="E-commerce Page Thumbnail"
           />
         </article>
