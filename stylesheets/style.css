@@ -71,11 +71,11 @@ ul > a {
   transform: translate(-50%, -50%);
 }
 
-/* projects */
-
 .projects-section {
   margin: 50px;
 }
+
+/* projects */
 
 .projects-container {
   display: flex;
@@ -103,6 +103,43 @@ ul > a {
   width: 600px;
   height: auto;
 }
+
+/* CV */
+
+.cv-section {
+  background-color: rgb(105, 163, 102);
+  padding: 50px;
+  height: 800px;
+}
+.road-image {
+  display: block;
+
+  height: 900px;
+  width: 700px;
+
+  margin: -126px auto 0 auto;
+}
+
+.graduation-article {
+  position: absolute;
+  margin: -900px 0 0 700px;
+}
+.university-article {
+  position: absolute;
+  margin-top: -700px;
+}
+.job-article {
+  position: absolute;
+  margin: -500px 0 0 800px;
+}
+.specialization-article {
+  position: absolute;
+  margin-top: -300px;
+}
+
+/* ------------------- 
+   mobile
+   -------------------*/
 
 @media (max-width: 800px) {
   .project-container > img {
