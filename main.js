@@ -15,3 +15,17 @@ function openLiveSiteFourCard() {
 function openLiveSiteECommerce() {
   window.location = "https://jaboe97.github.io/ecommerce_product_page";
 }
+
+/* dropdown info-box for CV */
+
+function toggleSemesterProjectInfoBox() {
+  $("#semesterProject").toggleClass("displayed");
+}
+
+function togglePracticleSemesterInfoBox() {
+  $("#practicleSemester").toggleClass("displayed");
+}
+
+function toggleThesisInfoBox() {
+  $("#thesis").toggleClass("displayed");
+}
