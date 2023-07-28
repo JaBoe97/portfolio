@@ -31,8 +31,24 @@
         </div>
       </div>
       <div class="contact-links">
-        <a href="https://github.com/JaBoe97">Mein Github-Profil</a> <br />
-        <a href="#contact">Meine Kontaktdaten</a>
+        <a href="https://github.com/JaBoe97"
+          ><img
+            class="black-github-logo"
+            src="images/transparents/githubSchwarz.png"
+            width="50px"
+            height="auto"
+            alt=""
+          /><span>Mein Github-Profil</span></a
+        >
+        <br />
+        <a href="#contact"
+          >Meine Kontaktdaten<img
+            class="contact-link-logo"
+            src="images/transparents/rechtspfeil2.png"
+            width="50px"
+            height="auto"
+            alt=""
+        /></a>
       </div>
 
       <div class="profile-picture-container">
@@ -53,8 +69,10 @@
     </section>
 
     <section aria-labelledby="projects" class="projects-section">
-      <h2 id="projects">Meine Projekte</h2>
-      <p>Hier sehen Sie eine Auswahl meiner bisherigen Projekte</p>
+      <h2 id="projects" class="projects-header">Meine Projekte</h2>
+      <p class="projects-paragraph">
+        Hier sehen Sie eine Auswahl meiner bisherigen Projekte
+      </p>
       <div class="projects-container">
         <article class="project-container" onclick="openLiveSiteNotification()">
           <h3>Notifications Page</h3>
@@ -89,14 +107,14 @@
         </article>
       </div>
     </section>
+
     <section aria-labelledby="cv" class="cv-section">
-      <h2 id="cv">Lebenslauf</h2>
+      <h2 id="cv" class="cv-header">Lebenslauf</h2>
       <img src="images/transparents/straße.png" class="road-image" alt="" />
       <article aria-labelledby="graduation" class="graduation-article">
         <h3 id="graduation">Abitur 2017</h3>
         <p>
           <a
-            class="cv-links"
             href="https://flemingschule.de/sozial-und-gesundheitswissenschaftliches-gymnasium-profil-gesundheit-sgg"
             >Alexander Fleming Schule Stuttgart</a
           >
@@ -106,7 +124,6 @@
         <h3 id="university">Studium 2017 - 2021</h3>
         <p>
           <a
-            class="cv-links"
             href="https://www.hs-furtwangen.de/studiengaenge/allgemeine-informatik-bachelor/"
             >Hochschule Furtwangen University Allgemeine Informatik</a
           >
@@ -174,15 +191,12 @@
       </article>
       <article aria-labelledby="job" class="job-article">
         <h3 id="job">
-          <a class="cv-links" href="https://www.buehnenhaus-hamburg.de/"
-            >Bühnenhaus Hamburg</a
-          >
+          <a href="https://www.buehnenhaus-hamburg.de/">Bühnenhaus Hamburg</a>
           2021 - heute
         </h3>
         <p>
           DresserIn am
           <a
-            class="cv-links"
             href="https://www.stage-entertainment.de/musicals-shows/musicals-in-stuttgart"
             >Apollo Theater Stuttgart</a
           >
@@ -196,19 +210,69 @@
         Lernplattformen, die ich u. a. genutzt habe:
         <ul>
           <li>
-            <a class="cv-links" href="https://www.w3schools.com">W3Schools</a>
+            <a href="https://www.w3schools.com">W3Schools</a>
           </li>
           <li>
-            <a class="cv-links" href="https://www.frontendmentor.io"
-              >Frontend Mentor</a
-            >
+            <a href="https://www.frontendmentor.io">Frontend Mentor</a>
           </li>
         </ul>
       </article>
     </section>
-    <section>
-      <article>Fähigkeiten</article>
-      <article>Interessen</article>
+    <section aria-labelledby="skills" class="skills-section">
+      <h2 id="skills" class="skills-header">Fähigkeiten</h2>
+      <div class="skills-container">
+        <img
+          src="images/transparents/block.png"
+          height="650px"
+          width="auto"
+          alt=""
+        />
+        <article class="skills-part-1">
+          <section>
+            <h3 class="skill-headers">Fähigkeiten</h3>
+            HTML <span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span> <br />
+            CSS <span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="white-dot"></span><br />
+            JavaScript/JQuery <span class="dark-dot"></span
+            ><span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="white-dot"></span><span class="white-dot"></span>
+          </section>
+          <section>
+            <h3 class="skill-headers">Erfahrungen mit:</h3>
+            GitHub, React, Bootstrap, Tailwind, Vite, Eclipse, Visual Studio
+            Code, Windows- und Linux-Betriebssystem
+          </section>
+        </article>
+
+        <img
+          src="images/transparents/block2.png"
+          height="650px"
+          width="auto"
+          alt=""
+        />
+        <article class="skills-part-2">
+          <section>
+            <h3 class="skill-headers">Sprachen</h3>
+            Deutsch <span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span> <br />
+            Englisch<span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span><span class="dark-dot"></span
+            ><span class="dark-dot"></span>
+          </section>
+          <section>
+            <h3 class="skill-headers">Relevantes aus dem Studium:</h3>
+            <ul>
+              <li>Projektmanagement</li>
+              <li>Software Qualität</li>
+              <li>Release Mangement und Entwicklungsprozesse</li>
+            </ul>
+          </section>
+        </article>
+      </div>
     </section>
   </body>
 

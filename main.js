@@ -20,12 +20,18 @@ function openLiveSiteECommerce() {
 
 function toggleSemesterProjectInfoBox() {
   $("#semesterProject").toggleClass("displayed");
+  $("#practicleSemester").removeClass("displayed");
+  $("#thesis").removeClass("displayed");
 }
 
 function togglePracticleSemesterInfoBox() {
   $("#practicleSemester").toggleClass("displayed");
+  $("#semesterProject").removeClass("displayed");
+  $("#thesis").removeClass("displayed");
 }
 
 function toggleThesisInfoBox() {
   $("#thesis").toggleClass("displayed");
+  $("#semesterProject").removeClass("displayed");
+  $("#practicleSemester").removeClass("displayed");
 }
