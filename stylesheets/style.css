@@ -3,6 +3,11 @@
 :root {
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Mynerve", cursive;
+
+  --orange: hsla(26, 89%, 62%, 0.649);
+  --gray: rgb(204, 203, 203);
+  --black: #000000;
+  --white: #ffffff;
 }
 
 body {
@@ -23,16 +28,36 @@ ul > a {
   list-style-type: none;
 }
 
+a:hover,
+a:focus,
+.cv-info-box-dropdown-header:hover,
+.cv-info-box-dropdown-header:active {
+  cursor: pointer;
+  text-shadow: 0 0 20px var(--black);
+}
+
 .sr-only {
   display: none;
+}
+
+.introduction-profil-picture-section,
+.cv-section,
+.skills-section {
+  padding: 50px;
+}
+
+.projects-header,
+.projects-paragraph,
+.cv-header,
+.skills-header {
+  margin-left: 50px;
 }
 
 /* introduction */
 
 .introduction-profil-picture-section {
   display: grid;
-  background-color: rgb(189, 244, 238);
-  padding: 50px;
+  background-color: var(--orange);
 }
 
 .introduction-container {
@@ -59,6 +84,10 @@ ul > a {
   margin: auto;
   line-height: 1.5;
 }
+.black-github-logo,
+.contact-link-logo {
+  vertical-align: middle;
+}
 
 .profile-picture-container {
   position: relative;
@@ -66,20 +95,20 @@ ul > a {
   grid-column: 2;
   grid-row: 1 / span 2;
   justify-self: end;
-  margin-right: 30px;
+  margin-right: 70px;
 }
 .profile-picture {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(5deg);
 }
+
+/* projects */
 
 .projects-section {
   margin: 50px;
 }
-
-/* projects */
 
 .projects-container {
   display: flex;
@@ -90,11 +119,11 @@ ul > a {
 
 .project-container {
   padding: 20px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px var(--black);
 }
 .project-container:hover,
 .project-container:active {
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px var(--black);
   cursor: pointer;
 }
 
@@ -111,8 +140,7 @@ ul > a {
 /* CV */
 
 .cv-section {
-  background-color: rgb(105, 163, 102);
-  padding: 50px;
+  background-color: var(--gray);
   height: 800px;
 }
 .road-image {
@@ -120,13 +148,6 @@ ul > a {
   height: 900px;
   width: 700px;
   margin: -126px auto 0 450px;
-}
-.cv-links:hover,
-.cv-links:active,
-.cv-info-box-dropdown-header:hover,
-.cv-info-box-dropdown-header:active {
-  cursor: pointer;
-  text-shadow: 0 0 20px black;
 }
 
 .graduation-article {
@@ -154,6 +175,55 @@ ul > a {
 }
 .displayed {
   display: block;
+}
+
+/* Skills and Interests */
+
+.skills-section {
+  background-color: var(--orange);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+}
+
+.skill-headers {
+  text-decoration: underline;
+}
+
+.skills-part-1,
+.skills-part-2 {
+  position: absolute;
+  margin-top: 30px;
+  line-height: 2.3;
+}
+.skills-part-1 {
+  max-width: 330px;
+  margin-left: -700px;
+}
+.skills-part-2 {
+  max-width: 400px;
+  margin-left: 700px;
+}
+
+.dark-dot,
+.white-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2px;
+  border: 1px solid var(--black);
+}
+.dark-dot {
+  background-color: var(--black);
+}
+.white-dot {
+  background-color: var(--white);
 }
 
 /* ------------------- 
