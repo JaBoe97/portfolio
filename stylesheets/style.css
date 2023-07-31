@@ -85,7 +85,11 @@ a:focus,
   line-height: 1.5;
 }
 .black-github-logo,
-.contact-link-logo {
+.contact-link-logo,
+.github-logo,
+.frontend-mentor-logo,
+.email-logo,
+.mobile-logo {
   vertical-align: middle;
 }
 
@@ -189,6 +193,7 @@ a:focus,
   justify-content: space-around;
   font-family: var(--secondary-font);
   font-size: 20px;
+  position: relative;
 }
 
 .skill-headers {
@@ -203,7 +208,7 @@ a:focus,
 }
 .skills-part-1 {
   max-width: 330px;
-  margin-left: -700px;
+  margin-left: -650px;
 }
 .skills-part-2 {
   max-width: 400px;
@@ -224,6 +229,56 @@ a:focus,
 }
 .white-dot {
   background-color: var(--white);
+}
+
+/* jump to start */
+.jump-to-start-section {
+  background-color: var(--orange);
+  padding-bottom: 10px;
+}
+
+.jump-to-start-button {
+  border: 3px solid black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 5px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  padding-top: 10px;
+  height: 100px;
+  line-height: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-links-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.github-logo,
+.frontend-mentor-logo,
+.email-logo,
+.mobile-logo {
+  width: auto;
+  padding-right: 5px;
+}
+.github-logo {
+  height: 27px;
+}
+.frontend-mentor-logo {
+  height: 25px;
+}
+.email-logo {
+  height: 25px;
+}
+.mobile-logo {
+  height: 25px;
 }
 
 /* ------------------- 

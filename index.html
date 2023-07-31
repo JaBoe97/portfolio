@@ -12,7 +12,10 @@
 
   <body>
     <h1 class="sr-only">Jana's Portfolio</h1>
+
+    <!-- Introduction -->
     <section
+      id="introduction"
       aria-labelledby="introduction"
       class="introduction-profil-picture-section"
     >
@@ -68,6 +71,7 @@
       </div>
     </section>
 
+    <!-- projects -->
     <section aria-labelledby="projects" class="projects-section">
       <h2 id="projects" class="projects-header">Meine Projekte</h2>
       <p class="projects-paragraph">
@@ -108,6 +112,7 @@
       </div>
     </section>
 
+    <!-- CV -->
     <section aria-labelledby="cv" class="cv-section">
       <h2 id="cv" class="cv-header">Lebenslauf</h2>
       <img src="images/transparents/straße.png" class="road-image" alt="" />
@@ -218,6 +223,8 @@
         </ul>
       </article>
     </section>
+
+    <!-- Skills -->
     <section aria-labelledby="skills" class="skills-section">
       <h2 id="skills" class="skills-header">Fähigkeiten</h2>
       <div class="skills-container">
@@ -274,21 +281,63 @@
         </article>
       </div>
     </section>
+    <section
+      aria-label="zum Seitenanfang springen"
+      class="jump-to-start-section"
+    >
+      <a href="#introduction">
+        <button class="jump-to-start-button">
+          <img
+            src="images/transparents/hochpfeil.png"
+            width="30px"
+            height="25px"
+            alt=""
+          /></button
+      ></a>
+    </section>
   </body>
 
   <footer>
-    <section>
-      <a href="https://github.com/JaBoe97">
+    <section aria-label="social links" class="social-links-section">
+      <a aria-label="github link" href="https://github.com/JaBoe97">
         <img
+          class="github-logo"
           src="images/transparents/github.png"
-          width="30px"
-          height="auto"
-          alt="github link"
+          alt=""
         />Github</a
       >
-      <a href="https://www.frontendmentor.io/profile/JaBoe97">
+      <a
+        aria-label="frontend mentor link"
+        href="https://www.frontendmentor.io/profile/JaBoe97"
+      >
+        <svg
+          class="frontend-mentor-logo"
+          viewBox="136.85 110.11 225.33 222.9"
+          xmlns="http://www.w3.org/2000/svg"
+          alt=""
+        >
+          <path d="m254.2 123v155.67" fill="#fff" />
+          <path
+            d="m244.2 123v155.67c0 12.87 20 12.89 20 0v-155.67c0-12.87-20-12.89-20 0zm112.54 44.79c-20 9.33-40 18.67-60 28-1.67.78-1.6 3.52 0 4.32 19.33 9.67 38.67 19.33 58 29 2.87 1.43 5.41-2.88 2.52-4.32-19.33-9.67-38.67-19.33-58-29v4.32c20-9.33 40-18.67 60-28 2.92-1.36.38-5.67-2.52-4.32z"
+            fill="#67bece"
+          />
+          <path
+            d="m138.18 223.14c11.34 53.74 54.41 96.35 108.32 107.04 9.04 1.79 18.28 2.8 27.5 2.82 6.43.01 6.44-9.99 0-10-50.08-.06-96.35-29.49-117.24-75.11-4.01-8.75-6.96-18-8.94-27.41-1.33-6.29-10.97-3.63-9.64 2.66z"
+            fill="#3f54a3"
+          />
+        </svg>
         Frontend Mentor</a
       >
+    </section>
+    <section aria-label="E-Mail und Handy">
+      <div>
+        <img class="email-logo" src="images/transparents/email.png" alt="" />
+        boehler.jana@gmail.com
+      </div>
+      <div>
+        <img class="mobile-logo" src="images/transparents/telefon.png" alt="" />
+        01575/8749390
+      </div>
     </section>
   </footer>
 </html>
