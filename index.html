@@ -11,333 +11,361 @@
   </head>
 
   <body>
-    <h1 class="sr-only">Jana's Portfolio</h1>
+    <header>
+      <nav>
+        <ul class="navbar-list">
+          <li><a href="#introduction-section">Einleitung</a></li>
+          <li><a href="#projects-section">Projekte</a></li>
+          <li><a href="#cv-section">Lebenslauf</a></li>
+          <li><a href="#skills-section">Fähigkeiten & Erfahrungen</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="sr-only">Jana's Portfolio</h1>
 
-    <!-- Introduction -->
-    <section
-      id="introduction"
-      aria-labelledby="introduction"
-      class="introduction-profil-picture-section"
-    >
-      <h2 id="introduction" class="sr-only">Introduction</h2>
-      <div class="introduction-container">
-        <img
-          src="images/transparents/zitat.png"
-          width="500px"
-          height="auto"
-          alt=""
-        />
-        <div class="introduction-text">
-          Hi! <br />
-          Ich bin Jana, <br />
-          Front-End Developer.
+      <!-- Introduction -->
+      <section
+        id="introduction-section"
+        aria-labelledby="introduction"
+        class="introduction-profil-picture-section"
+      >
+        <h2 id="introduction" class="sr-only">Einleitung</h2>
+        <div class="introduction-container">
+          <img
+            class="introduction-background-image"
+            src="images/transparents/zitat.png"
+            alt=""
+          />
+          <div class="introduction-text">
+            Hi! <br />
+            Ich bin Jana, <br />
+            Front-End Developer.
+          </div>
         </div>
-      </div>
-      <div class="contact-links">
-        <a href="https://github.com/JaBoe97"
-          ><img
-            class="black-github-logo"
-            src="images/transparents/githubSchwarz.png"
-            width="50px"
-            height="auto"
-            alt=""
-          /><span>Mein Github-Profil</span></a
-        >
-        <br />
-        <a href="#contact"
-          >Meine Kontaktdaten<img
-            class="contact-link-logo"
-            src="images/transparents/rechtspfeil2.png"
-            width="50px"
-            height="auto"
-            alt=""
-        /></a>
-      </div>
-
-      <div class="profile-picture-container">
-        <img
-          src="images/transparents/rahmen.png"
-          width="400px"
-          height="auto"
-          alt=""
-        />
-        <img
-          src="images/Profilbild.jpg"
-          width="300px"
-          height="auto"
-          alt="Profilbild"
-          class="profile-picture"
-        />
-      </div>
-    </section>
-
-    <!-- projects -->
-    <section aria-labelledby="projects" class="projects-section">
-      <h2 id="projects" class="projects-header">Meine Projekte</h2>
-      <p class="projects-paragraph">
-        Hier sehen Sie eine Auswahl meiner bisherigen Projekte
-      </p>
-      <div class="projects-container">
-        <article class="project-container" onclick="openLiveSiteNotification()">
-          <h3>Notifications Page</h3>
-          <img
-            src="images/screenshots/Notifications page thumbnail.png"
-            alt="Motifications page Thumbnail"
-          />
-        </article>
-        <article
-          class="project-container"
-          onclick="openLiveSiteResultSummary()"
-        >
-          <h3>Result Summary Component</h3>
-          <img
-            src="images/screenshots/Results summary component thumbnail.png"
-            alt="Result Summary Component Thumbnail"
-          />
-        </article>
-        <article class="project-container" onclick="openLiveSiteFourCard()">
-          <h3>Four Card Section</h3>
-          <img
-            src="images/screenshots/Four card feature section thumbnail.png"
-            alt="Four Card Section Thumbnail"
-          />
-        </article>
-        <article class="project-container" onclick="openLiveSiteECommerce()">
-          <h3>E-commerce Page</h3>
-          <img
-            src="images/screenshots/E-commerce product page thumbnail.png"
-            alt="E-commerce Page Thumbnail"
-          />
-        </article>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section aria-labelledby="cv" class="cv-section">
-      <h2 id="cv" class="cv-header">Lebenslauf</h2>
-      <img src="images/transparents/straße.png" class="road-image" alt="" />
-      <article aria-labelledby="graduation" class="graduation-article">
-        <h3 id="graduation">Abitur 2017</h3>
-        <p>
-          <a
-            href="https://flemingschule.de/sozial-und-gesundheitswissenschaftliches-gymnasium-profil-gesundheit-sgg"
-            >Alexander Fleming Schule Stuttgart</a
-          >
-        </p>
-      </article>
-      <article aria-labelledby="university" class="university-article">
-        <h3 id="university">Studium 2017 - 2021</h3>
-        <p>
-          <a
-            href="https://www.hs-furtwangen.de/studiengaenge/allgemeine-informatik-bachelor/"
-            >Hochschule Furtwangen University Allgemeine Informatik</a
+        <div class="contact-links">
+          <a href="https://github.com/JaBoe97"
+            ><img
+              class="black-github-logo"
+              src="images/transparents/githubSchwarz.png"
+              width="50px"
+              height="auto"
+              alt=""
+            /><span>Mein Github-Profil</span></a
           >
           <br />
-          Abschluss: Bachelor of Science
-        </p>
-        <ul>
-          <li>
-            <h4
-              class="cv-info-box-dropdown-header"
-              onclick="toggleSemesterProjectInfoBox()"
-            >
-              Semesterprojekt
-            </h4>
-            <p id="semesterProject" class="semster-project-info-box">
-              "Erweiterung und Integration eines Projektvergabe-Tools in Felix"
-            </p>
-          </li>
-          <li>
-            <h4
-              class="cv-info-box-dropdown-header"
-              onclick="togglePracticleSemesterInfoBox()"
-            >
-              Praxissemester
-            </h4>
-            <div id="practicleSemester" class="practicle-semester-info-box">
-              <p>
-                Continental Automotive GmbH Villingen-Schwenningen <br />
-                "Datenschutz und Informationssicherheit"
-              </p>
-              <ul>
-                <li>
-                  Betreuung und Weiterentwicklung der Digital Signage Lösung
-                  <br />
-                  "Digitales Schwarzes Brett"
-                </li>
-                <li>Administration des Zeit- und Zutrittskontrollsystems</li>
-                <li>Technische Betreuung der Videokonferenzsysteme</li>
-              </ul>
-              <a>Arbeitszeugnis</a>
-            </div>
-          </li>
-          <li>
-            <h4
-              class="cv-info-box-dropdown-header"
-              onclick="toggleThesisInfoBox()"
-            >
-              Abschlussarbeit
-            </h4>
-            <div id="thesis" class="thesis-info-box">
-              <p>
-                "Analyse der elektronischen Patientenakte am Beispiel der AOK"
-              </p>
-              <ul>
-                <li>Analyse der Benutzerzufriedenheit</li>
-                <li>Internationaler Vergleich</li>
-                <li>
-                  Erörterung verschiedener Möglichkeiten <br />
-                  zur Verbesserung der Kundenzufriedenheit
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </article>
-      <article aria-labelledby="job" class="job-article">
-        <h3 id="job">
-          <a href="https://www.buehnenhaus-hamburg.de/">Bühnenhaus Hamburg</a>
-          2021 - heute
-        </h3>
-        <p>
-          DresserIn am
-          <a
-            href="https://www.stage-entertainment.de/musicals-shows/musicals-in-stuttgart"
-            >Apollo Theater Stuttgart</a
-          >
-        </p>
-      </article>
-      <article aria-labelledby="specialization" class="specialization-article">
-        <h3 id="specialization">
-          Spezialisierung im Bereich <br />
-          Web Development 2021 - heute
-        </h3>
-        Lernplattformen, die ich u. a. genutzt habe:
-        <ul>
-          <li>
-            <a href="https://www.w3schools.com">W3Schools</a>
-          </li>
-          <li>
-            <a href="https://www.frontendmentor.io">Frontend Mentor</a>
-          </li>
-        </ul>
-      </article>
-    </section>
+          <a href="#contact"
+            >Meine Kontaktdaten<img
+              class="contact-link-logo"
+              src="images/transparents/rechtspfeil2.png"
+              width="50px"
+              height="auto"
+              alt=""
+          /></a>
+        </div>
 
-    <!-- Skills -->
-    <section aria-labelledby="skills" class="skills-section">
-      <h2 id="skills" class="skills-header">Fähigkeiten</h2>
-      <div class="skills-container">
-        <img
-          src="images/transparents/block.png"
-          height="650px"
-          width="auto"
-          alt=""
-        />
-        <article class="skills-part-1">
-          <section>
-            <h3 class="skill-headers">Fähigkeiten</h3>
-            HTML <span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span> <br />
-            CSS <span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="white-dot"></span><br />
-            JavaScript/JQuery <span class="dark-dot"></span
-            ><span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="white-dot"></span><span class="white-dot"></span>
-          </section>
-          <section>
-            <h3 class="skill-headers">Erfahrungen mit:</h3>
-            GitHub, React, Bootstrap, Tailwind, Vite, Eclipse, Visual Studio
-            Code, Windows- und Linux-Betriebssystem
-          </section>
-        </article>
-
-        <img
-          src="images/transparents/block2.png"
-          height="650px"
-          width="auto"
-          alt=""
-        />
-        <article class="skills-part-2">
-          <section>
-            <h3 class="skill-headers">Sprachen</h3>
-            Deutsch <span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span> <br />
-            Englisch<span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span><span class="dark-dot"></span
-            ><span class="dark-dot"></span>
-          </section>
-          <section>
-            <h3 class="skill-headers">Relevantes aus dem Studium:</h3>
-            <ul>
-              <li>Projektmanagement</li>
-              <li>Software Qualität</li>
-              <li>Release Mangement und Entwicklungsprozesse</li>
-            </ul>
-          </section>
-        </article>
-      </div>
-    </section>
-    <section
-      aria-label="zum Seitenanfang springen"
-      class="jump-to-start-section"
-    >
-      <a href="#introduction">
-        <button class="jump-to-start-button">
+        <div class="profile-picture-container">
           <img
-            src="images/transparents/hochpfeil.png"
-            width="30px"
-            height="25px"
+            class="profile-picture-background-image"
+            src="images/transparents/rahmen.png"
             alt=""
-          /></button
-      ></a>
-    </section>
-  </body>
+          />
+          <img
+            class="profile-picture"
+            src="images/Profilbild.jpg"
+            alt="Profilbild"
+          />
+        </div>
+      </section>
 
-  <footer>
-    <section aria-label="social links" class="social-links-section">
-      <a aria-label="github link" href="https://github.com/JaBoe97">
-        <img
-          class="github-logo"
-          src="images/transparents/github.png"
-          alt=""
-        />Github</a
+      <!-- projects -->
+      <section
+        aria-labelledby="projects"
+        class="projects-section"
+        id="projects-section"
       >
-      <a
-        aria-label="frontend mentor link"
-        href="https://www.frontendmentor.io/profile/JaBoe97"
-      >
-        <svg
-          class="frontend-mentor-logo"
-          viewBox="136.85 110.11 225.33 222.9"
-          xmlns="http://www.w3.org/2000/svg"
-          alt=""
+        <h2 id="projects" class="projects-header">Meine Projekte</h2>
+        <p class="projects-paragraph">
+          Hier sehen Sie eine Auswahl meiner bisherigen Projekte
+        </p>
+        <div class="projects-container">
+          <article
+            class="project-container"
+            onclick="openLiveSiteNotification()"
+          >
+            <h3>Notifications Page</h3>
+            <img
+              src="images/screenshots/Notifications page thumbnail.png"
+              alt="Motifications page Thumbnail"
+            />
+          </article>
+          <article
+            class="project-container"
+            onclick="openLiveSiteResultSummary()"
+          >
+            <h3>Result Summary Component</h3>
+            <img
+              src="images/screenshots/Results summary component thumbnail.png"
+              alt="Result Summary Component Thumbnail"
+            />
+          </article>
+          <article class="project-container" onclick="openLiveSiteFourCard()">
+            <h3>Four Card Section</h3>
+            <img
+              src="images/screenshots/Four card feature section thumbnail.png"
+              alt="Four Card Section Thumbnail"
+            />
+          </article>
+          <article class="project-container" onclick="openLiveSiteECommerce()">
+            <h3>E-commerce Page</h3>
+            <img
+              src="images/screenshots/E-commerce product page thumbnail.png"
+              alt="E-commerce Page Thumbnail"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section aria-labelledby="cv" class="cv-section" id="cv-section">
+        <h2 id="cv" class="cv-header">Lebenslauf</h2>
+        <img src="images/transparents/straße.png" class="road-image" alt="" />
+        <article aria-labelledby="graduation" class="graduation-article">
+          <h3 id="graduation">Abitur 2017</h3>
+          <p>
+            <a
+              href="https://flemingschule.de/sozial-und-gesundheitswissenschaftliches-gymnasium-profil-gesundheit-sgg"
+              >Alexander Fleming Schule Stuttgart</a
+            >
+          </p>
+        </article>
+        <article aria-labelledby="university" class="university-article">
+          <h3 id="university">Studium 2017 - 2021</h3>
+          <p>
+            <a
+              href="https://www.hs-furtwangen.de/studiengaenge/allgemeine-informatik-bachelor/"
+              >Hochschule Furtwangen University Allgemeine Informatik</a
+            >
+            <br />
+            Abschluss: Bachelor of Science
+          </p>
+          <ul>
+            <li>
+              <h4
+                class="cv-info-box-dropdown-header"
+                onclick="toggleSemesterProjectInfoBox()"
+              >
+                Semesterprojekt
+              </h4>
+              <p id="semesterProject" class="semster-project-info-box">
+                "Erweiterung und Integration eines Projektvergabe-Tools in
+                Felix"
+              </p>
+            </li>
+            <li>
+              <h4
+                class="cv-info-box-dropdown-header"
+                onclick="togglePracticleSemesterInfoBox()"
+              >
+                Praxissemester
+              </h4>
+              <div id="practicleSemester" class="practicle-semester-info-box">
+                <p>
+                  Continental Automotive GmbH Villingen-Schwenningen <br />
+                  "Datenschutz und Informationssicherheit"
+                </p>
+                <ul>
+                  <li>
+                    Betreuung und Weiterentwicklung der Digital Signage Lösung
+                    <br />
+                    "Digitales Schwarzes Brett"
+                  </li>
+                  <li>Administration des Zeit- und Zutrittskontrollsystems</li>
+                  <li>Technische Betreuung der Videokonferenzsysteme</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h4
+                class="cv-info-box-dropdown-header"
+                onclick="toggleThesisInfoBox()"
+              >
+                Abschlussarbeit
+              </h4>
+              <div id="thesis" class="thesis-info-box">
+                <p>
+                  "Analyse der elektronischen Patientenakte am Beispiel der AOK"
+                </p>
+                <ul>
+                  <li>Analyse der Benutzerzufriedenheit</li>
+                  <li>Internationaler Vergleich</li>
+                  <li>
+                    Erörterung verschiedener Möglichkeiten <br />
+                    zur Verbesserung der Kundenzufriedenheit
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article aria-labelledby="job" class="job-article">
+          <h3 id="job">
+            <a href="https://www.buehnenhaus-hamburg.de/">Bühnenhaus Hamburg</a>
+            2021 - heute
+          </h3>
+          <p>
+            DresserIn am
+            <a
+              href="https://www.stage-entertainment.de/musicals-shows/musicals-in-stuttgart"
+              >Apollo Theater Stuttgart</a
+            >
+          </p>
+        </article>
+        <article
+          aria-labelledby="specialization"
+          class="specialization-article"
         >
-          <path d="m254.2 123v155.67" fill="#fff" />
-          <path
-            d="m244.2 123v155.67c0 12.87 20 12.89 20 0v-155.67c0-12.87-20-12.89-20 0zm112.54 44.79c-20 9.33-40 18.67-60 28-1.67.78-1.6 3.52 0 4.32 19.33 9.67 38.67 19.33 58 29 2.87 1.43 5.41-2.88 2.52-4.32-19.33-9.67-38.67-19.33-58-29v4.32c20-9.33 40-18.67 60-28 2.92-1.36.38-5.67-2.52-4.32z"
-            fill="#67bece"
-          />
-          <path
-            d="m138.18 223.14c11.34 53.74 54.41 96.35 108.32 107.04 9.04 1.79 18.28 2.8 27.5 2.82 6.43.01 6.44-9.99 0-10-50.08-.06-96.35-29.49-117.24-75.11-4.01-8.75-6.96-18-8.94-27.41-1.33-6.29-10.97-3.63-9.64 2.66z"
-            fill="#3f54a3"
-          />
-        </svg>
-        Frontend Mentor</a
+          <h3 id="specialization">
+            Spezialisierung im Bereich <br />
+            Web Development 2021 - heute
+          </h3>
+          Lernplattformen, die ich u. a. genutzt habe:
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com">W3Schools</a>
+            </li>
+            <li>
+              <a href="https://www.frontendmentor.io">Frontend Mentor</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Skills -->
+      <section
+        aria-labelledby="skills"
+        class="skills-section"
+        id="skills-section"
       >
-    </section>
-    <section aria-label="E-Mail und Handy">
-      <div>
-        <img class="email-logo" src="images/transparents/email.png" alt="" />
-        boehler.jana@gmail.com
-      </div>
-      <div>
-        <img class="mobile-logo" src="images/transparents/telefon.png" alt="" />
-        01575/8749390
-      </div>
-    </section>
-  </footer>
+        <h2 id="skills" class="skills-header">Fähigkeiten & Erfahrungen</h2>
+        <div class="skills-container">
+          <img
+            src="images/transparents/block.png"
+            height="650px"
+            width="auto"
+            alt=""
+          />
+          <article class="skills-part-1">
+            <section>
+              <h3 class="skill-headers">Fähigkeiten</h3>
+              HTML <span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="dark-dot"></span> <br />
+              CSS <span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="white-dot"></span><br />
+              JavaScript/JQuery <span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="white-dot"></span><span class="white-dot"></span>
+            </section>
+            <section>
+              <h3 class="skill-headers">Erfahrungen mit:</h3>
+              GitHub, React, Bootstrap, Tailwind, Vite, Eclipse, Visual Studio
+              Code, Windows- und Linux-Betriebssystem
+            </section>
+          </article>
+
+          <img
+            src="images/transparents/block2.png"
+            height="650px"
+            width="auto"
+            alt=""
+          />
+          <article class="skills-part-2">
+            <section>
+              <h3 class="skill-headers">Sprachen</h3>
+              Deutsch <span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span>
+              <br />
+              Englisch<span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span
+              ><span class="dark-dot"></span><span class="dark-dot"></span>
+            </section>
+            <section>
+              <h3 class="skill-headers">Relevantes aus dem Studium:</h3>
+              <ul>
+                <li>Projektmanagement</li>
+                <li>Software Qualität</li>
+                <li>Release Mangement und Entwicklungsprozesse</li>
+              </ul>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section
+        aria-label="zum Seitenanfang springen"
+        class="jump-to-start-section"
+      >
+        <a href="#introduction">
+          <button class="jump-to-start-button">
+            <img
+              src="images/transparents/hochpfeil.png"
+              width="30px"
+              height="25px"
+              alt=""
+            /></button
+        ></a>
+      </section>
+    </main>
+
+    <footer>
+      <section aria-label="social links" class="social-links-section">
+        <a aria-label="github link" href="https://github.com/JaBoe97">
+          <img
+            class="github-logo"
+            src="images/transparents/github.png"
+            alt=""
+          />Github</a
+        >
+        <a
+          aria-label="frontend mentor link"
+          href="https://www.frontendmentor.io/profile/JaBoe97"
+        >
+          <svg
+            class="frontend-mentor-logo"
+            viewBox="136.85 110.11 225.33 222.9"
+            xmlns="http://www.w3.org/2000/svg"
+            alt=""
+          >
+            <path d="m254.2 123v155.67" fill="#fff" />
+            <path
+              d="m244.2 123v155.67c0 12.87 20 12.89 20 0v-155.67c0-12.87-20-12.89-20 0zm112.54 44.79c-20 9.33-40 18.67-60 28-1.67.78-1.6 3.52 0 4.32 19.33 9.67 38.67 19.33 58 29 2.87 1.43 5.41-2.88 2.52-4.32-19.33-9.67-38.67-19.33-58-29v4.32c20-9.33 40-18.67 60-28 2.92-1.36.38-5.67-2.52-4.32z"
+              fill="#67bece"
+            />
+            <path
+              d="m138.18 223.14c11.34 53.74 54.41 96.35 108.32 107.04 9.04 1.79 18.28 2.8 27.5 2.82 6.43.01 6.44-9.99 0-10-50.08-.06-96.35-29.49-117.24-75.11-4.01-8.75-6.96-18-8.94-27.41-1.33-6.29-10.97-3.63-9.64 2.66z"
+              fill="#3f54a3"
+            />
+          </svg>
+          Frontend Mentor</a
+        >
+      </section>
+      <section aria-label="E-Mail und Handy">
+        <div>
+          <img class="email-logo" src="images/transparents/email.png" alt="" />
+          boehler.jana@gmail.com
+        </div>
+        <div>
+          <img
+            class="mobile-logo"
+            src="images/transparents/telefon.png"
+            alt=""
+          />
+          01575/8749390
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
