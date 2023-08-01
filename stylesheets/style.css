@@ -330,7 +330,7 @@ footer {
 
 @media (max-width: 1000px) {
   .introduction-profil-picture-section {
-    padding: 50px 30px;
+    padding: 100px 30px 50px 30px;
   }
   .introduction-background-image {
     width: 400px;
@@ -352,6 +352,9 @@ footer {
     display: none;
   }
 
+  .introduction-profil-picture-section {
+    padding: 50px 30px;
+  }
   .introduction-background-image {
     width: 350px;
   }
@@ -397,9 +400,12 @@ footer {
   .introduction-container {
     grid-column: 1;
   }
+  .contact-links {
+    grid-row: 3;
+  }
   .profile-picture-container {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
   }
   .profile-picture-background-image {
     width: 300px;
