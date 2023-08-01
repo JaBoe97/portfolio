@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheets/normalize.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/mobile.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </head>
@@ -130,116 +131,123 @@
       <!-- CV -->
       <section aria-labelledby="cv" class="cv-section" id="cv-section">
         <h2 id="cv" class="cv-header">Lebenslauf</h2>
-        <img src="images/transparents/straße.png" class="road-image" alt="" />
-        <article aria-labelledby="graduation" class="graduation-article">
-          <h3 id="graduation">Abitur 2017</h3>
-          <p>
-            <a
-              href="https://flemingschule.de/sozial-und-gesundheitswissenschaftliches-gymnasium-profil-gesundheit-sgg"
-              >Alexander Fleming Schule Stuttgart</a
-            >
-          </p>
-        </article>
-        <article aria-labelledby="university" class="university-article">
-          <h3 id="university">Studium 2017 - 2021</h3>
-          <p>
-            <a
-              href="https://www.hs-furtwangen.de/studiengaenge/allgemeine-informatik-bachelor/"
-              >Hochschule Furtwangen University Allgemeine Informatik</a
-            >
-            <br />
-            Abschluss: Bachelor of Science
-          </p>
-          <ul>
-            <li>
-              <h4
-                class="cv-info-box-dropdown-header"
-                onclick="toggleSemesterProjectInfoBox()"
+        <div class="cv-projects-container">
+          <img src="images/transparents/straße.png" class="road-image" alt="" />
+          <article aria-labelledby="graduation" class="graduation-article">
+            <h3 id="graduation">Abitur 2017</h3>
+            <p>
+              <a
+                href="https://flemingschule.de/sozial-und-gesundheitswissenschaftliches-gymnasium-profil-gesundheit-sgg"
+                >Alexander Fleming Schule Stuttgart</a
               >
-                Semesterprojekt
-              </h4>
-              <p id="semesterProject" class="semster-project-info-box">
-                "Erweiterung und Integration eines Projektvergabe-Tools in
-                Felix"
-              </p>
-            </li>
-            <li>
-              <h4
-                class="cv-info-box-dropdown-header"
-                onclick="togglePracticleSemesterInfoBox()"
+            </p>
+          </article>
+          <article aria-labelledby="university" class="university-article">
+            <h3 id="university">Studium 2017 - 2021</h3>
+            <p>
+              <a
+                href="https://www.hs-furtwangen.de/studiengaenge/allgemeine-informatik-bachelor/"
+                >Hochschule Furtwangen University Allgemeine Informatik</a
               >
-                Praxissemester
-              </h4>
-              <div id="practicleSemester" class="practicle-semester-info-box">
-                <p>
-                  Continental Automotive GmbH Villingen-Schwenningen <br />
-                  "Datenschutz und Informationssicherheit"
+              <br />
+              Abschluss: Bachelor of Science
+            </p>
+            <ul>
+              <li>
+                <h4
+                  class="cv-info-box-dropdown-header"
+                  onclick="toggleSemesterProjectInfoBox()"
+                >
+                  Semesterprojekt
+                </h4>
+                <p id="semesterProject" class="semster-project-info-box">
+                  "Erweiterung und Integration eines Projektvergabe-Tools in
+                  Felix"
                 </p>
-                <ul>
-                  <li>
-                    Betreuung und Weiterentwicklung der Digital Signage Lösung
-                    <br />
-                    "Digitales Schwarzes Brett"
-                  </li>
-                  <li>Administration des Zeit- und Zutrittskontrollsystems</li>
-                  <li>Technische Betreuung der Videokonferenzsysteme</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <h4
-                class="cv-info-box-dropdown-header"
-                onclick="toggleThesisInfoBox()"
+              </li>
+              <li>
+                <h4
+                  class="cv-info-box-dropdown-header"
+                  onclick="togglePracticleSemesterInfoBox()"
+                >
+                  Praxissemester
+                </h4>
+                <div id="practicleSemester" class="practicle-semester-info-box">
+                  <p>
+                    Continental Automotive GmbH Villingen-Schwenningen <br />
+                    "Datenschutz und Informationssicherheit"
+                  </p>
+                  <ul>
+                    <li>
+                      Betreuung und Weiterentwicklung der Digital Signage Lösung
+                      <br />
+                      "Digitales Schwarzes Brett"
+                    </li>
+                    <li>
+                      Administration des Zeit- und Zutrittskontrollsystems
+                    </li>
+                    <li>Technische Betreuung der Videokonferenzsysteme</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h4
+                  class="cv-info-box-dropdown-header"
+                  onclick="toggleThesisInfoBox()"
+                >
+                  Abschlussarbeit
+                </h4>
+                <div id="thesis" class="thesis-info-box">
+                  <p>
+                    "Analyse der elektronischen Patientenakte am Beispiel der
+                    AOK"
+                  </p>
+                  <ul>
+                    <li>Analyse der Benutzerzufriedenheit</li>
+                    <li>Internationaler Vergleich</li>
+                    <li>
+                      Erörterung verschiedener Möglichkeiten <br />
+                      zur Verbesserung der Kundenzufriedenheit
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article aria-labelledby="job" class="job-article">
+            <h3 id="job">
+              <a href="https://www.buehnenhaus-hamburg.de/"
+                >Bühnenhaus Hamburg</a
               >
-                Abschlussarbeit
-              </h4>
-              <div id="thesis" class="thesis-info-box">
-                <p>
-                  "Analyse der elektronischen Patientenakte am Beispiel der AOK"
-                </p>
-                <ul>
-                  <li>Analyse der Benutzerzufriedenheit</li>
-                  <li>Internationaler Vergleich</li>
-                  <li>
-                    Erörterung verschiedener Möglichkeiten <br />
-                    zur Verbesserung der Kundenzufriedenheit
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </article>
-        <article aria-labelledby="job" class="job-article">
-          <h3 id="job">
-            <a href="https://www.buehnenhaus-hamburg.de/">Bühnenhaus Hamburg</a>
-            2021 - heute
-          </h3>
-          <p>
-            DresserIn am
-            <a
-              href="https://www.stage-entertainment.de/musicals-shows/musicals-in-stuttgart"
-              >Apollo Theater Stuttgart</a
-            >
-          </p>
-        </article>
-        <article
-          aria-labelledby="specialization"
-          class="specialization-article"
-        >
-          <h3 id="specialization">
-            Spezialisierung im Bereich <br />
-            Web Development 2021 - heute
-          </h3>
-          Lernplattformen, die ich u. a. genutzt habe:
-          <ul>
-            <li>
-              <a href="https://www.w3schools.com">W3Schools</a>
-            </li>
-            <li>
-              <a href="https://www.frontendmentor.io">Frontend Mentor</a>
-            </li>
-          </ul>
-        </article>
+              2021 - heute
+            </h3>
+            <p>
+              DresserIn am
+              <a
+                href="https://www.stage-entertainment.de/musicals-shows/musicals-in-stuttgart"
+                >Apollo Theater Stuttgart</a
+              >
+            </p>
+          </article>
+          <article
+            aria-labelledby="specialization"
+            class="specialization-article"
+          >
+            <h3 id="specialization">
+              Spezialisierung im Bereich <br />
+              Web Development 2021 - heute
+            </h3>
+            <span>Lernplattformen, die ich u. a. genutzt habe:</span>
+            <ul>
+              <li>
+                <a href="https://www.w3schools.com">W3Schools</a>
+              </li>
+              <li>
+                <a href="https://www.frontendmentor.io">Frontend Mentor</a>
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <!-- Skills -->

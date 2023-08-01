@@ -1,0 +1,207 @@
+/* ------------------- 
+   mobile version
+   -------------------*/
+
+@media (max-width: 1200px) {
+  .profile-picture-container {
+    margin-right: 0;
+  }
+
+  .project-container {
+    min-width: 60%;
+  }
+
+  .cv-section li,
+  .cv-section p,
+  .cv-section span {
+    font-size: 16px;
+  }
+  .road-image {
+    margin-left: 350px;
+  }
+  .graduation-article {
+    margin-left: 680px;
+  }
+  .job-article {
+    margin-left: 750px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .cv-section {
+    height: fit-content;
+  }
+  .road-image {
+    display: none;
+  }
+  .graduation-article,
+  .university-article,
+  .job-article,
+  .specialization-article {
+    position: relative;
+    margin: 0;
+    border: 3px dashed var(--black);
+    border-radius: 20px;
+    padding: 0 10px;
+  }
+  .cv-projects-container {
+    display: grid;
+    grid-template-columns: 400px auto;
+    column-gap: 20px;
+  }
+  .graduation-article {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .university-article {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .job-article {
+    grid-column: 1;
+    grid-row: 3 / span 4;
+  }
+  .specialization-article {
+    grid-column: 2;
+    grid-row: 4 / span 5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introduction-profil-picture-section {
+    padding: 100px 30px 50px 30px;
+  }
+  .introduction-background-image {
+    width: 400px;
+  }
+  .introduction-text {
+    font-size: 18px;
+  }
+
+  .profile-picture-background-image {
+    width: 300px;
+  }
+  .profile-picture {
+    width: 220px;
+  }
+}
+
+@media (max-width: 910px) {
+  .cv-projects-container {
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+  }
+  .graduation-article {
+    grid-column: 1 / span 2;
+  }
+  .university-article {
+    grid-column: 1 / span 2;
+  }
+  .job-article {
+    grid-column: 1;
+    grid-row: 3;
+    height: fit-content;
+  }
+  .specialization-article {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 770px) {
+  nav {
+    display: none;
+  }
+
+  .cv-section {
+    padding: 50px 20px;
+  }
+  .cv-projects-container {
+    font-size: 16px;
+  }
+
+  .introduction-profil-picture-section {
+    padding: 50px 30px;
+  }
+  .introduction-background-image {
+    width: 350px;
+  }
+  .introduction-text {
+    font-size: 16px;
+  }
+
+  .profile-picture-background-image {
+    width: 250px;
+  }
+  .profile-picture {
+    width: 180px;
+  }
+
+  .project-container > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .introduction-container {
+    grid-column: 1 / span 2;
+  }
+  .introduction-background-image {
+    width: 400px;
+  }
+  .introduction-text {
+    font-size: 18px;
+  }
+
+  .profile-picture-container {
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .projects-header,
+  .projects-paragraph {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .introduction-container {
+    grid-column: 1;
+  }
+  .contact-links {
+    grid-row: 3;
+  }
+  .profile-picture-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .profile-picture-background-image {
+    width: 300px;
+  }
+  .profile-picture {
+    width: 220px;
+  }
+
+  .job-article {
+    grid-column: 1 / span 2;
+  }
+  .specialization-article {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduction-background-image {
+    width: 325px;
+  }
+  .introduction-text {
+    font-size: 16px;
+  }
+  .profile-picture-background-image {
+    width: 250px;
+  }
+  .profile-picture {
+    width: 180px;
+  }
+}
