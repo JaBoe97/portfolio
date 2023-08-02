@@ -65,6 +65,17 @@
     grid-column: 2;
     grid-row: 4 / span 5;
   }
+
+  .skills-container {
+    font-size: 16px;
+  }
+  .skills-background-image-1,
+  .skills-background-image-2 {
+    height: 620px;
+  }
+  .skills-part-2 {
+    left: 79%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -83,6 +94,14 @@
   }
   .profile-picture {
     width: 220px;
+  }
+
+  .skills-background-image-1,
+  .skills-background-image-2 {
+    height: 560px;
+  }
+  .skills-part-2 {
+    left: 81%;
   }
 }
 
@@ -105,6 +124,23 @@
   .specialization-article {
     grid-column: 2;
     grid-row: 3;
+  }
+
+  .skills-background-image-1,
+  .skills-background-image-2 {
+    height: 500px;
+  }
+  .skills-part-1 {
+    left: 26%;
+  }
+  .skills-part-2 {
+    left: 82%;
+  }
+}
+
+@media (max-width: 830px) {
+  .skills-part-2 {
+    left: 84%;
   }
 }
 
@@ -139,6 +175,24 @@
 
   .project-container > img {
     width: 100%;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+  }
+  .skills-background-image-1 {
+    height: 470px;
+  }
+  .skills-background-image-2 {
+    height: 540px;
+  }
+  .skills-part-1 {
+    top: 22%;
+    left: 50%;
+  }
+  .skills-part-2 {
+    top: 70%;
+    left: 57%;
   }
 }
 
@@ -203,5 +257,30 @@
   }
   .profile-picture {
     width: 180px;
+  }
+
+  .skills-background-image-1 {
+    height: 450px;
+  }
+  .skills-background-image-2 {
+    height: 500px;
+  }
+  .skills-part-2 {
+    top: 72%;
+    left: 63%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0;
+    height: 180px;
+  }
+  .github-frontend-mentor-section {
+    align-items: center;
+    margin-top: 10px;
+  }
+  .email-mobil-section {
+    align-items: center;
+    margin-bottom: 10px;
   }
 }

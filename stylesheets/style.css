@@ -222,12 +222,19 @@ nav {
 }
 
 .skills-container {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   font-family: var(--secondary-font);
-  font-size: 20px;
-  position: relative;
+}
+
+.skills-background-image-1 {
+  height: 640px;
+  width: auto;
+}
+.skills-background-image-2 {
+  height: 640px;
+  width: auto;
 }
 
 .skill-headers {
@@ -237,16 +244,19 @@ nav {
 .skills-part-1,
 .skills-part-2 {
   position: absolute;
-  margin-top: 30px;
+  transform: translate(-50%, -50%);
   line-height: 2.3;
 }
+
 .skills-part-1 {
-  max-width: 330px;
-  margin-left: -650px;
+  width: 280px;
+  top: 40%;
+  left: 24%;
 }
 .skills-part-2 {
-  max-width: 400px;
-  margin-left: 700px;
+  width: 290px;
+  top: 40%;
+  left: 77%;
 }
 
 .dark-dot,
@@ -283,14 +293,19 @@ nav {
 
 /* Footer */
 footer {
-  padding-top: 10px;
+  display: flex;
+  gap: 10px;
   height: 100px;
   line-height: 2;
   display: flex;
   justify-content: space-evenly;
 }
 
-.social-links-section {
+.github-frontend-mentor-section {
+  display: flex;
+  flex-direction: column;
+}
+.email-mobil-section {
   display: flex;
   flex-direction: column;
 }
