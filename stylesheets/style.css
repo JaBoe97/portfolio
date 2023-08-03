@@ -68,7 +68,8 @@ a:focus,
 nav {
   position: fixed;
   width: 100%;
-  background-color: var(--white);
+  color: var(--white);
+  background-color: rgba(74, 55, 35, 0.551);
   z-index: 1;
 }
 .navbar-list {
@@ -299,6 +300,7 @@ footer {
   line-height: 2;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 .github-frontend-mentor-section {

@@ -273,11 +273,10 @@
   footer {
     flex-direction: column;
     gap: 0;
-    height: 180px;
+    height: auto;
   }
   .github-frontend-mentor-section {
     align-items: center;
-    margin-top: 10px;
   }
   .email-mobil-section {
     align-items: center;
