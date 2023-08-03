@@ -30,9 +30,7 @@ ul > a {
 }
 
 a:hover,
-a:focus,
-.cv-info-box-dropdown-header:hover,
-.cv-info-box-dropdown-header:active {
+.cv-info-box-dropdown-header:hover {
   cursor: pointer;
   text-shadow: 0 0 20px var(--black);
 }
@@ -157,8 +155,7 @@ nav {
   min-width: 45%;
   max-width: 450px;
 }
-.project-container:hover,
-.project-container:active {
+.project-container:hover {
   box-shadow: 0 0 20px var(--black);
   cursor: pointer;
 }
@@ -290,6 +287,9 @@ nav {
   padding: 5px;
   margin: 0 auto;
   display: block;
+}
+.jump-to-start-button:hover {
+  box-shadow: 0 0 20px var(--black);
 }
 
 /* Footer */
