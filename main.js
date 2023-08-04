@@ -1,3 +1,9 @@
+/* lightbox */
+function closeLightbox() {
+  $("#lightbox-container").css("display", "none");
+  $("body").css("overflow", "auto");
+}
+
 /* onclick events for product images to be sent to live pages */
 
 function openLiveSiteNotification() {

@@ -11,7 +11,7 @@
     <script type="text/javascript" src="main.js"></script>
   </head>
 
-  <body>
+  <body id="body">
     <header>
       <nav>
         <ul class="navbar-list">
@@ -23,7 +23,43 @@
       </nav>
     </header>
 
-    <main>
+    <!-- lightbox -->
+    <article
+      labeldby="annotation"
+      id="lightbox-container"
+      class="lightbox-container"
+    >
+      <button class="close-lightbox-button" onClick="closeLightbox()">
+        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <section class="lightbox-product-pictures-container">
+        <h2 id="annotation" class="annotation">Anmerkung</h2>
+        <p class="light-box-text">
+          Dieses Portfolio dient als Leitfaden durch meine Bewerbung. Es enthält
+          u.a. Projekt-Beispiele und Lebenslauf. Nicht alle Bewerbungsunterlagen
+          sind hier zu finden, wie beispielsweise Zeugnisse. Dieses Portfolio
+          dient ausschließlich zu Bewerbungszwecken. Mir ist bewusst, dass diese
+          Webseite nicht perfekt ist. Einige Features z.B. bzgl. der
+          Accessibility fehlen, dessen bin ich mir bewusst. Das Ziel war es
+          nicht, eine optimale Webseite zu erstellen. Die Webseite soll
+          jediglich als simple Methode dienen, um durch meine Bewerbung bzw.
+          meine bisherigen Projekte zu führen. Einige der aufgeführten Projekte
+          sind bzgl. accessibility und Semantik nicht so ausgereift wie andere,
+          da ich natürlich mit jedem Projekt Neues gelernt habe. Außerdem bitte
+          ich zu entschuldigen, falls das Design, verwendete Farben oder
+          Schriftarten nicht optimal gewählt worden sind. Ich bin keine
+          Designerin.
+        </p>
+      </section>
+    </article>
+
+    <main id="main-container">
       <h1 class="sr-only">Jana's Portfolio</h1>
 
       <!-- Introduction -->
@@ -59,7 +95,7 @@
           <a href="#contact"
             >Meine Kontaktdaten<img
               class="contact-link-logo"
-              src="images/transparents/rechtspfeil2.png"
+              src="images/transparents/rechtspfeil.png"
               width="50px"
               height="auto"
               alt=""
@@ -302,7 +338,7 @@
                 <br />
                 Englisch &nbsp; <span class="dark-dot"></span
                 ><span class="dark-dot"></span><span class="dark-dot"></span
-                ><span class="dark-dot"></span><span class="dark-dot"></span>
+                ><span class="dark-dot"></span><span class="white-dot"></span>
               </section>
               <section>
                 <h3 class="skill-headers">Relevantes aus dem Studium:</h3>
