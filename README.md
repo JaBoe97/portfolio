@@ -14,8 +14,7 @@ Dieses Portfolio dient als Leitfaden durch meine Bewerbung. Es enthält u.a. Pro
 ## Anmerkungen
 
 Die Webseite ist nicht perfekt. Einige Features z.B. bzgl. der Accessibility fehlen, dessen bin ich mir bewusst. Das Ziel war es nicht, eine optimale Webseite zu erstellen. Die Webseite soll jediglich als simple Methode dienen, um durch meine Bewerbung bzw. meine bisherigen Projekte zu führen.
-Die aufgeführten Projekte wurden in folgender Reihenfolge bearbeitet: Results summary component, Four card feature section, notification page, E-commerce product page. Ältere Projekte sind daher z.B. bzgl. accessibility und Semantik nicht so ausgereift wie bspw. das e-commerce product page-Projekt.
-Ich bin keine Designerin, daher bitte ich zu entschuldigen, wenn das Design, verwendete Farben oder Schriftarten nicht optimal gewählt worden sind.
+Die aufgeführten Projekte wurden in folgender Reihenfolge bearbeitet: Results summary component, Four card feature section, notification page, E-commerce product page. Ältere Projekte sind daher z.B. bzgl. Accessibility und Semantik nicht so ausgereift wie bspw. das e-commerce product page-Projekt.
 
 ## Screenshots
 
